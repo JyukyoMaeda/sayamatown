@@ -1,0 +1,677 @@
+@charset "utf-8";
+/* CSS Document */
+
+img{
+opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+img.lazyloaded {
+  opacity: 1;
+}
+
+
+
+/*----------------------------------------------
+　　動画
+----------------------------------------------*/
+
+.iframe-wrapper{
+position: relative;
+height: 240px;
+overflow: hidden;
+padding-top: 56.25%;
+margin-bottom: 30px;
+}
+
+.iframe-wrapper iframe, .iframe-wrapper_s iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.iframe-wrapper_s{
+position: relative;
+height: 0;
+overflow: hidden;
+padding-top: 56.25%;
+margin-bottom: 30px;
+}
+
+.iframe-wrapper2{
+position: relative;
+height: 0;
+overflow: hidden;
+padding-top: 56.25%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.iframe-wrapper2 iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+@media print, screen and (min-width: 767px) {
+
+.column_frame{
+	position:relative;
+	max-width:1280px;
+	margin:0px auto;
+}
+
+.frame980{
+max-width:980px;
+margin:0px auto;
+}
+
+article{
+padding: 0px 0px 100px;
+}
+
+.column_top{
+display: flex;
+justify-content: space-between;
+flex-direction: row-reverse;
+align-items: center;
+padding-bottom: 100px;
+margin-left: 10%;
+}
+
+.column_topL{
+width: 400px;
+margin-right: 50px;
+}
+
+.column_topL h2{
+color: #98B13B;
+font-size: 5.5rem;
+font-family: itc-american-typewriter,serif;
+font-weight: 300;
+font-style: normal;
+margin-bottom: 50px;
+position: relative;
+}
+
+.column_topL p:nth-of-type(1){
+font-size: 1.4vw;
+line-height: 1.6;
+margin-bottom: 20px;
+color: #98B13B;
+}
+
+.column_topL p:nth-of-type(2){
+font-size: 1.6rem;
+line-height: 1.8;
+margin-top: 50px;
+}
+
+.column_box{
+display: flex;
+justify-content: space-between;
+flex-direction: row-reverse;
+font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.column_box .column_boxR{
+width: 40%;
+}
+
+.column_box .column_boxL{
+flex: 1;
+margin-right: 50px;
+}
+
+.column_box .column_boxR div{
+padding: 5px 0px 50px;
+}
+
+.column_box .column_boxR div p{
+font-size: 1.4rem;
+margin-top: 10px;
+}
+
+.column_box .column_boxR div p a{
+text-decoration: underline;
+}
+
+.column_box .column_boxR div p a:hover{
+color: #E5E5E5;
+}
+
+.column_box .column_boxL h3{
+font-size: 2.6rem;
+line-height: 1.6;
+font-family: "ryo-display-plusn";
+padding-bottom: 30px;
+}
+
+.column_box .column_boxL h3 span{
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 150%;
+vertical-align: baseline;
+margin-right: 0.3em;
+color: #98B13B;
+}
+
+.column_box .column_boxL p{
+font-size: 1.6rem;
+line-height: 2.2;
+}
+
+.column_box .column_boxL p span{
+font-size: 100%;
+font-weight: bold;
+line-height: 2.2;
+}
+
+.column_box .column_boxL p .txtcolor01{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #2E3192;
+}
+
+.column_box .column_boxL p .txtcolor02{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #FF7BAC;
+}
+
+.column_box .column_boxL p .txtcolor03{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #006837;
+}
+
+.column_box .column_boxL p .txtcolor04{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #0071BC;
+}
+
+.column_box .column_boxL p .txtcolor05{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #9E005D;
+}
+
+.column_boxL .next_page{
+padding: 80px 0px;
+}
+
+.column_boxL .next_page a{
+text-decoration: underline;
+font-size: 1.4rem;
+}
+
+.page_box{
+display: flex;
+justify-content: space-between;
+border-top: #000 1px solid;
+border-bottom: #000 1px solid;
+padding: 50px 20px;
+}
+
+.page_box a{
+font-size: 1.6rem;
+}
+
+.page_box ul{
+display: flex;
+}
+
+.page_box ul li.abb{
+line-height: 4.5;
+}
+
+.page_box ul li a{
+display: block;
+border: #000 1px solid;
+padding: 5px 12px;
+margin: 0px 10px;
+}
+
+.outlink{
+padding: 50px 0px;
+text-align: center;
+}
+
+.outlink a{
+font-size: 1.4rem;
+line-height: 1.8;
+text-decoration: underline;
+}
+
+.outlink a:hover, .column_boxL a:hover{
+color: #E5E5E5;
+}
+
+.outlink p.credit{
+font-weight: bold;
+padding-bottom: 10px;
+}
+
+
+.top_ph{
+margin-bottom: 50px;
+}
+
+
+.dia_logo{
+width: 70%;
+}
+
+ul.ph_box{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+ul.ph_box li{
+width: calc(33.3% - 20px);
+margin-bottom: 30px;
+box-shadow: 5px 5px 0px #98B13B;
+}
+
+
+
+
+.name_txt{
+font-family: bebas-neue-by-fontfabric, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 8.0rem;
+line-height: 0.9;
+}
+
+.name_txt span{
+font-size: 100%;
+font-weight: 700;
+font-style: normal;
+color: #E49811;
+}
+
+
+
+.introduction{
+display: flex;
+margin-top: 50px;
+}
+
+.introduction div:nth-child(1){
+margin-right: 30px;
+width: 25%;
+}
+
+.introduction div:nth-child(2){
+font-size: 130%;
+line-height: 1.5;
+width: 75%;
+}
+
+.introduction div:nth-child(2) div a{
+font-size: 130%;
+display: inline-block;
+padding-bottom: 1em;
+text-decoration: underline;
+}
+
+}
+
+
+
+.introduction div:nth-child(2) div a:before{
+content: '\f099';
+display: inline-block;
+font-family: FontAwesome;
+font-weight: normal;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+.column_frame{
+padding: 0px 8px;
+}
+
+article{
+padding: 0px 0px 50px;
+margin-bottom: 30px;
+}
+
+.column_top{
+padding-bottom: 30px;
+}
+
+.column_topL{
+padding: 0px 8px;
+}
+
+.column_topL h2{
+color: #98B13B;
+text-align: center;
+font-size: 5.5rem;
+font-family: itc-american-typewriter,serif;
+font-weight: 300;
+font-style: normal;
+margin-bottom: 10px;
+}
+
+
+.column_topL p:nth-of-type(1){
+font-size: 1.5rem;
+line-height: 1.8;
+margin-bottom: 20px;
+text-align: center;
+color: #98B13B;
+}
+
+.column_topL p:nth-of-type(2){
+text-align: center;
+font-size: 1.3rem;
+}
+
+.column_box{
+font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.column_box .column_boxR{
+display: none;
+}
+
+.column_box .column_boxR div p{
+color: #0E449B;
+padding: 5px 0px 10px;
+}
+
+.column_box .column_boxL{
+flex: 1;
+}
+
+.column_box .column_boxR div{
+padding: 5px 0px 50px;
+}
+
+.column_box .column_boxL  h3{
+font-size: 1.6rem;
+font-family: "ryo-display-plusn";
+line-height: 1.5;
+padding-bottom: 30px;
+}
+
+.column_box .column_boxL h3 span{
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 130%;
+vertical-align: baseline;
+margin-right: 0.3em;
+color: #98B13B;
+}
+
+
+.column_box .column_boxL p{
+font-size: 1.4rem;
+line-height: 1.8;
+}
+
+.column_box .column_boxL p span{
+font-size: 100%;
+font-weight: bold;
+line-height: 1.8;
+}
+
+.column_box .column_boxL p .txtcolor01{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #2E3192;
+}
+
+.column_box .column_boxL p .txtcolor02{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #FF7BAC;
+}
+
+.column_box .column_boxL p .txtcolor03{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #006837;
+}
+
+.column_box .column_boxL p .txtcolor04{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #0071BC;
+}
+
+.column_box .column_boxL p .txtcolor05{
+display: block;
+font-size: 100%;
+font-weight: bold;
+color: #9E005D;
+}
+
+.column_ph01{
+width: 70%;
+margin: 0px auto 15px;
+color: #1600AC;
+}
+
+
+.column_ph01 div img{
+margin-bottom: 5px;
+}
+
+.column_ph02 ul{
+display: flex;
+justify-content: space-around;
+margin: 30px 0px 15px;
+color: #1600AC;
+}
+
+.column_ph02 ul li{
+width: calc(50% - 10px);
+}
+
+.column_boxL .column_ph02 p, .column_boxL .column_ph01 p{
+font-size: 1.2rem;
+padding-top: 0.3em;
+}
+
+.column_boxL .next_page{
+padding: 50px 0px;
+}
+
+.column_boxL .next_page a{
+text-decoration: underline;
+font-size: 1.4rem;
+}
+
+.page_box{
+display: flex;
+justify-content: space-between;
+border-top: #000 1px solid;
+border-bottom: #000 1px solid;
+padding: 50px 20px;
+}
+
+.page_box a{
+font-size: 1.4rem;
+}
+
+.page_box ul{
+display: flex;
+}
+
+.page_box ul li.abb{
+line-height: 4.5;
+}
+
+.page_box ul li a{
+display: block;
+border: #000 1px solid;
+padding: 6px 8px;
+margin: 0px 4px;
+}
+
+.outlink{
+font-size: 1.4rem;
+padding: 50px 0px;
+border-bottom: #000 1px solid;
+text-align: center;
+}
+
+.outlink a{
+font-size: 1.4rem;
+text-decoration: underline;
+}
+
+.outlink div{
+margin: 0px auto 30px;
+margin-bottom: 30px;
+}
+
+.outlink p.credit{
+font-weight: bold;
+padding-bottom: 10px;
+}
+
+.outlink .bottom_logo01 a img{width: 180px; height: 66px;}
+.outlink .bottom_logo02 a img{width: 60px; height: 60px;}
+.outlink .bottom_logo03 a img{width: 170px;}
+.outlink .bottom_logo04 a img{width: 200px; height: 90px;}
+.outlink .bottom_logo05 a img{width: 150px;}
+
+.outlink .relogo1 img{width: 80%;}
+.outlink .relogo2 img{width: 50%;}
+.outlink .relogo3 img{width: 35%;}
+
+
+.outlink .bottom_txtlogo a{text-decoration: none;}
+.outlink .bottom_txtlogo a .txtlogo01{
+font-family: bebas-neue-by-fontfabric, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 4.0rem;
+line-height: 0.9;
+}
+
+.outlink .bottom_txtlogo a .txtlogo01 span{
+font-size: 100%;
+font-weight: 700;
+font-style: normal;
+color: #E49811;
+}
+
+.top_ph{
+margin-bottom: 50px;
+}
+
+
+
+.mabt150{
+margin-bottom: 50px;
+}
+
+.matop150{
+margin-top: 50px;
+}
+
+.dia_logo{
+width: 200px;
+margin: 0 auto;
+}
+
+ul.ph_box{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+ul.ph_box li{
+width: calc(50% - 5px);
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+.name_txt{
+font-family: bebas-neue-by-fontfabric, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 6.0rem;
+line-height: 0.9;
+text-align: center;
+}
+
+.name_txt span{
+font-size: 100%;
+font-weight: 700;
+font-style: normal;
+color: #E49811;
+}
+
+
+
+.introduction{
+display: flex;
+margin-top: 50px;
+}
+
+.introduction div:nth-child(1){
+margin-right: 20px;
+width: 35%;
+}
+
+.introduction div:nth-child(2){
+font-size: 100%;
+line-height: 1.5;
+width: 65%;
+}
+
+.introduction div:nth-child(2) div a{
+font-size: 100%;
+display: inline-block;
+padding-bottom: 1em;
+text-decoration: underline;
+}
+
+
+}
+
+
+
+

@@ -1,0 +1,134 @@
+// Sass Document
+@charset "UTF-8";
+
+// 基本設定
+// @import "./setting/reset";      // リセットCSS
+@import "./setting/color";      // カラー変数
+@import "./setting/structure";  // レスポンシブ変数
+@import "./setting/typography"; // テキスト変数
+@import "./setting/gap";        // 間隔
+
+// オリジナル
+.w100s{
+    @include max(768){
+        width: 100% !important;
+    }
+}
+.w90s{
+    @include max(768){
+        width: 90% !important;
+        margin: auto;
+    }
+}
+.w90{
+    width: 90%;
+    margin: 0 auto;
+    &.-right{
+        margin: auto 0 auto auto;
+    }
+}
+.w85{
+    width: 85%;
+    margin: 0 auto;
+}
+.w80{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.next_page{text-decoration: underline;}
+.outlink{border-bottom: 1px solid black;}
+
+.textArea{
+    h2{
+        color: #98B13B;
+        font-size: 5.5rem;
+        font-family: itc-american-typewriter,serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-bottom: 50px;
+        position: relative;
+        @include max(768){
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    p{
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #98B13B;
+        @include max(768){
+            text-align: center;
+        }
+    }
+    .banner{
+        display: block;
+        width: 75%;
+        margin: auto;
+        @include min(768){
+            width: 80%;
+            margin-left: 0;
+        }
+        &:hover{
+            transform: scale(1.03);
+            filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.384));
+        }
+    }
+}
+.picArea{
+    img{
+        // width: calc(33.3% - 20px);
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 0px #98B13B;
+    }
+}
+.flexArea{
+    display: flex;
+    flex-wrap: wrap;
+    @include min(768){
+        flex-wrap: nowrap;
+    }
+
+    // 反転
+    &.-r{ flex-direction: row-reverse !important;}
+    &.-r_s{ @include max(768){flex-direction: row-reverse !important;}}
+    &.-cr{ flex-direction: column-reverse !important;}
+    &.-cr_s{ @include max(768){flex-direction: column-reverse !important;}}
+
+    &.-col02{
+        &.-top{
+            align-items: center;
+            .left{
+                width: 100%;
+                @include min(768){
+                    width: calc(28%);
+                    padding-right: 15px;
+                }
+            }
+            .right{
+                width: 100%;
+                @include min(768){
+                    width: calc(72%);
+                    padding-left: 15px;
+                }
+            }
+        }
+        &.-contentArea{
+            .left{
+                width: 100%;
+                @include min(768){
+                    width: calc(70%);
+                    padding-right: 2.5%;
+                }
+            }
+            .right{
+                width: 100%;
+                @include min(768){
+                    width: calc(30%);
+                    padding-left: 2.5%;
+                }
+            }
+        }
+    }
+}

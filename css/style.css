@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* CSS Document */
+img.img{
+opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+img.lazyloaded {
+  opacity: 1;
+}
+
+/*----------------------------------------------
+　　ローディングアニメーション　jsはpagetopに記述
+----------------------------------------------*/
+
+
+@keyframes fadeIn{
+  0%{ opacity: 0.2; height: 0;}
+  100%{ opacity: 1; height: 60px;}
+}
+
+@-webkit-keyframes fadeIn{
+  0%{ opacity: 0.2; height: 0;}
+  100%{ opacity: 1; height: 60px;}
+}
+
+
+
+
+@keyframes prun{
+0% {transform: skew(0deg, 0deg);}
+5% {transform: skew(5deg, 4.2deg);}
+10% {transform: skew(-4deg, -3deg);}
+15% {transform: skew(3deg, 2.2deg);}
+20% {transform: skew(-2deg, -1.5deg);}
+25% {transform: skew(0.9deg, 0.9deg);}
+30% {transform: skew(-0.6deg, -0.6deg);}
+35% {transform: skew(0.3deg, 0.3deg);}
+40% {transform: skew(-0.2deg, -0.2deg);}
+45% {transform: skew(0.1deg, 0.1deg);}  
+50% {transform: skew(0deg, 0deg);}
+}
+@-webkit-keyframes prun {
+0% {-webkit-transform: skew(0deg, 0deg);}
+5% {-webkit-transform: skew(5deg, 4.2deg);}
+10% {-webkit-transform: skew(-4deg, -3deg);}
+15% {-webkit-transform: skew(3deg, 2.2deg);}
+20% {-webkit-transform: skew(-2deg, -1.5deg);}
+25% {-webkit-transform: skew(0.9deg, 0.9deg);}
+30% {-webkit-transform: skew(-0.6deg, -0.6deg);}
+35% {-webkit-transform: skew(0.3deg, 0.3deg);}
+40% {-webkit-transform: skew(-0.2deg, -0.2deg);}
+45% {-webkit-transform: skew(0.1deg, 0.1deg);}  
+50% {-webkit-transform: skew(0deg, 0deg);}
+}
+
+/*----------------------------------------------
+　　youtube
+----------------------------------------------*/
+
+
+.iframe-wrapper{
+position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.iframe-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes shake {
+    0%   { transform:translate(0, 0); }
+    16%  { transform:translate(0, 36px); }
+    32%  { transform:translate(0, -30px); }
+    48%  { transform:translate(0, 24px); }
+    64%  { transform:translate(0, -18px); }
+    80%  { transform:translate(0, 12px); }
+    96%  { transform:translate(0, -6px); }
+    100% { transform:translate(0, 0); }
+}
+
+
+@media print, screen and (min-width: 767px) {
+
+/*----------------------------------------------
+　　コンテンツ
+----------------------------------------------*/
+.youtube{
+max-width: 980px;
+margin: -30px auto 80px;
+}
+
+header h1{
+margin: 20px 0px 40px 20px;
+width: 180px;
+}
+
+header .main_ph{
+width: 90%;
+margin: 0 auto 30px;
+}
+
+header .mark{
+position: relative;
+margin-bottom: 150px;
+}
+
+header .mark .line{
+background: url("../common/images/top_line.svg") repeat-x;
+height: 86px;
+}
+
+header .mark div:nth-of-type(2){
+width: 228px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translateY(-50%) translateX(-50%);
+transform: translateY(-50%) translateX(-50%);
+}
+
+.intro{
+text-align: center;
+font-family: heisei-maru-gothic-std, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2.0rem;
+line-height: 2.4;
+color: #4D4D4D;
+margin-bottom: 150px;
+}
+
+.box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 100px;
+}
+
+.reverse{
+flex-direction: row-reverse;
+}
+
+.box > div{
+width: calc(50% - 30px);
+}
+
+.box h2{
+width: 80%;
+margin-bottom: 50px;
+}
+
+.box h3{
+font-size: 2.4rem;
+font-family: a-otf-ud-shin-go-pr6n,sans-serif;
+font-weight: 300;
+font-style: normal;
+margin-bottom: 50px;
+}
+
+.box p{
+font-size: 1.6rem;
+margin-bottom: 50px;
+}
+
+.box .btn a{
+font-size: 1.6rem;
+color: #FFF100;
+font-weight: bold;
+background: #98B13B;
+border-radius: 35px;
+padding: 1em;
+transition: 0.5s;
+}
+
+.box .btn a:after{
+content: "";
+display: inline-block;
+background: url("../images/arrow_white.svg") no-repeat;
+width: 40px;
+height: 5px;
+vertical-align: middle;
+margin-left: 0.5em;
+}
+
+.box .btn a:hover{
+opacity: 0.5;
+}
+
+.interview{
+margin-bottom: 150px;
+}
+
+.interview h2{
+font-family: amatic-sc,sans-serif;
+font-weight: 700;
+font-style: normal;
+color: #98B13B;
+font-size: 6.0rem;
+margin-bottom: 30px;
+}
+
+.interview h2 span{
+font-size: 2.2rem;
+font-family: a-otf-ud-shin-go-pr6n,sans-serif;
+font-weight: 300;
+font-style: normal;
+vertical-align: middle;
+margin-left: 1em;
+color: #4D4D4D;
+}
+
+.interview ul.slider li{
+margin: 0px 30px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) { 
+.youtube{
+max-width: 980px;
+margin: -20px auto 30px;
+padding: 0px 8px;
+}
+
+header h1{
+margin: 10px 0px 10px 10px;
+width: 150px;
+}
+
+header .mark{
+position: relative;
+margin-bottom: 70px;
+}
+
+header .mark .line{
+background: url("../common/images/top_line.svg") repeat-x;
+height: 86px;
+}
+
+header .mark div:nth-of-type(2){
+width: 150px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translateY(-50%) translateX(-50%);
+transform: translateY(-50%) translateX(-50%);
+}
+
+.intro{
+font-family: heisei-maru-gothic-std, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.4rem;
+line-height: 2.0;
+color: #4D4D4D;
+margin-bottom: 80px;
+padding: 0px 8px;
+}
+
+.box{
+margin-bottom: 100px;
+position: relative;
+}
+
+.bg1{
+background: url("../images/living_ph1.jpg") no-repeat top right;
+background-size: 38%;
+}
+
+.bg2{
+background: url("../images/around_ph1.jpg") no-repeat top right;
+background-size: 38%;
+}
+
+.bg3{
+background: url("../images/bring_ph1.jpg") no-repeat top right;
+background-size: 38%;
+}
+
+.box h2{
+width: 80%;
+}
+
+.box h3{
+font-size: 1.7rem;
+font-family: a-otf-ud-shin-go-pr6n,sans-serif;
+font-weight: 300;
+font-style: normal;
+margin-bottom: 30px;
+text-shadow    : 
+       2px  2px 1px #ffffff,
+      -2px  2px 1px #ffffff,
+       2px -2px 1px #ffffff,
+      -2px -2px 1px #ffffff,
+       2px  0px 1px #ffffff,
+       0px  2px 1px #ffffff,
+      -2px  0px 1px #ffffff,
+       0px -2px 1px #ffffff;
+}
+
+.box p{
+font-size: 1.6rem;
+margin-bottom: 20px;
+}
+
+.box .btn{
+text-align: center;
+}
+
+.box .btn a{
+font-size: 1.2rem;
+color: #FFF100;
+font-weight: bold;
+background: #98B13B;
+border-radius: 35px;
+padding: 1em 0.5em;
+transition: 0.5s;
+}
+
+.box .btn a:after{
+content: "";
+display: inline-block;
+background: url("../images/arrow_white.svg") no-repeat;
+width: 20px;
+height: 5px;
+vertical-align: middle;
+margin-left: 0.5em;
+}
+
+.box .btn a:hover{
+opacity: 0.5;
+}
+
+.box .box_ph{
+width: 85%;
+margin: 0 auto 30px;
+}
+
+.interview{
+margin-bottom: 100px;
+}
+
+.interview h2{
+font-family: amatic-sc,sans-serif;
+font-weight: 700;
+font-style: normal;
+color: #98B13B;
+font-size: 3.6rem;
+margin-bottom: 30px;
+}
+
+.interview h2 span{
+font-size: 1.3rem;
+font-family: a-otf-ud-shin-go-pr6n,sans-serif;
+font-weight: 300;
+font-style: normal;
+vertical-align: middle;
+margin-left: 1em;
+color: #4D4D4D;
+}
+
+.interview ul.slider li{
+margin: 0px 5px;
+}
+
+}
+
+
+/*----------------------------------------------------
+ ナビゲーション
+----------------------------------------------------*/
+@media print, screen and (min-width: 767px) {
+nav.top_nav ul{
+display: flex;
+justify-content: space-between;
+max-width: 800px;
+margin: 0 auto;
+padding-bottom: 100px;
+}
+
+nav.top_nav ul li a{
+font-size: 2.0rem;
+font-family: "ryo-display-plusn";
+color: #666666;
+position: relative;
+}
+
+nav.top_nav ul li a:before{
+content: "";
+display: inline-block;
+width: 42px;
+height: 32px;
+vertical-align: baseline;
+margin-right: 0.5em;
+}
+
+nav.top_nav ul li:nth-child(1) a:before{background:  url("../common/images/nav01.svg") no-repeat;}
+nav.top_nav ul li:nth-child(2) a:before{background:  url("../common/images/nav02.svg") no-repeat;}
+nav.top_nav ul li:nth-child(3) a:before{background:  url("../common/images/nav03.svg") no-repeat;}
+nav.top_nav ul li:nth-child(4) a:before{background:  url("../common/images/nav04.svg") no-repeat;}
+
+nav.top_nav ul li:a { position: relative;  display: inline-block;  transition: .3s;}
+nav.top_nav ul li a:after { position: absolute; bottom: -5px; left: 50%; content: ''; width: 0; height: 1px; transition: .3s; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
+nav.top_nav ul li a:hover:after {width: 100%;}
+
+nav.top_nav ul li a:after{ background-color: #98B13B;}
+nav.top_nav ul li a:hover{color: #98B13B;}
+}
+
+@media screen and (max-width: 768px) { 
+
+}
+
+
+
+
+
+
+

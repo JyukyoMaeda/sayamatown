@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+img.img{
+opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+img.lazyloaded {
+  opacity: 1;
+}
+
+/*----------------------------------------------
+　　ローディングアニメーション　jsはpagetopに記述
+----------------------------------------------*/
+
+
+@keyframes fadeIn{
+  0%{ opacity: 0.2; height: 0;}
+  100%{ opacity: 1; height: 60px;}
+}
+
+@-webkit-keyframes fadeIn{
+  0%{ opacity: 0.2; height: 0;}
+  100%{ opacity: 1; height: 60px;}
+}
+
+
+
+
+@keyframes prun{
+0% {transform: skew(0deg, 0deg);}
+5% {transform: skew(5deg, 4.2deg);}
+10% {transform: skew(-4deg, -3deg);}
+15% {transform: skew(3deg, 2.2deg);}
+20% {transform: skew(-2deg, -1.5deg);}
+25% {transform: skew(0.9deg, 0.9deg);}
+30% {transform: skew(-0.6deg, -0.6deg);}
+35% {transform: skew(0.3deg, 0.3deg);}
+40% {transform: skew(-0.2deg, -0.2deg);}
+45% {transform: skew(0.1deg, 0.1deg);}  
+50% {transform: skew(0deg, 0deg);}
+}
+@-webkit-keyframes prun {
+0% {-webkit-transform: skew(0deg, 0deg);}
+5% {-webkit-transform: skew(5deg, 4.2deg);}
+10% {-webkit-transform: skew(-4deg, -3deg);}
+15% {-webkit-transform: skew(3deg, 2.2deg);}
+20% {-webkit-transform: skew(-2deg, -1.5deg);}
+25% {-webkit-transform: skew(0.9deg, 0.9deg);}
+30% {-webkit-transform: skew(-0.6deg, -0.6deg);}
+35% {-webkit-transform: skew(0.3deg, 0.3deg);}
+40% {-webkit-transform: skew(-0.2deg, -0.2deg);}
+45% {-webkit-transform: skew(0.1deg, 0.1deg);}
+50% {-webkit-transform: skew(0deg, 0deg);}
+}
+
+/*----------------------------------------------
+　　youtube
+----------------------------------------------*/
+
+
+
+@keyframes shake {
+    0%   { transform:translate(0, 0); }
+    16%  { transform:translate(0, 36px); }
+    32%  { transform:translate(0, -30px); }
+    48%  { transform:translate(0, 24px); }
+    64%  { transform:translate(0, -18px); }
+    80%  { transform:translate(0, 12px); }
+    96%  { transform:translate(0, -6px); }
+    100% { transform:translate(0, 0); }
+}
+
+
+@media print, screen and (min-width: 767px) {
+
+/*----------------------------------------------
+　　コンテンツ
+----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 768px) { 
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
